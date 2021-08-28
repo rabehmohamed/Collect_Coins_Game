@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+void swap(int a, int b){
+printf("Before swaping");
+printf("X=%d,Y=%d",a,b);
+int temp;
+temp=a;
+a=b;
+b=temp;
+printf("after swaping");
+printf("X=%d,Y=%d",a,b);
+}
+int main()
+{
+  int x;
+  int y;
+  printf("Enter first number");
+  scanf("%d",&x);
+  printf("Enter second number");
+  scanf("%d",&y);
+  swap(x,y);
+}

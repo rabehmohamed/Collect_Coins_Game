@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+void edit(int *a){
+  *a=*a+1;
+}
+
+int main()
+{
+   int x;
+   printf("enter value of x =");
+   scanf("%d", &x );
+   printf("before edit=%d\n",x);
+   edit(&x);
+   printf("after edit=%d" ,x);
+}

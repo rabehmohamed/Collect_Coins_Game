@@ -1,0 +1,29 @@
++POINT
+-----
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+     printf("Enter first number then Operation then second number\n");
+     int n1,n2,r;
+     char x;
+     scanf("%d %c %d" , &n1 , &x , &n2);
+     switch(x){
+       case '+' :
+       r=n1+n2;
+       break;
+       case '-' :
+       r=n1-n2;
+       break;
+       case '*' :
+       r=n1*n2;
+       break;
+       case '/' :
+       r=n1/n2;
+       break;
+       default :
+        printf("You entered wrong operator");
+     }
+     printf("%d %c %d = %d" , n1 , x , n2 ,r );
+}
